@@ -19,7 +19,7 @@ jobs:
 
       - name: Generar servidor Python Flask
         run: |
-          java -jar openapi-generator-cli.jar generate -i api.yaml -g python-flask -o ./openapi_server
+          java -jar openapi-generator-cli.jar generate -i api.yml -g python-flask -o ./openapi_server
 
       - name: Comprimir resultado
         run: zip -r openapi_server.zip openapi_server
